@@ -3,7 +3,7 @@ import LayOut from '../../Components/Layaout/LayOut';
 import Carousel from '../../Components/Carousel/CarouselEffect';
 import Category from '../../Components/Category/Category';
 import Product from '../../Components/Product/Product';
-// import Footer from "../../components/Footer/Footer"
+import Footer from "../../Components/Footer/Footer"
 
 
 
@@ -13,7 +13,7 @@ const Landing = () => {
       <Carousel />
       <Category />
       <Product />
-      {/* <Footer/> */}
+      <Footer/>
     </LayOut>
   )
 }
