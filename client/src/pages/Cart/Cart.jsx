@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
-import LayOut from '../../Components/LayOut/LayOut'
+import LayOut from '../../Components/Layout/LayOut'
 import { DataContext } from '../../Components/DataProvider/DataProvider'
-import ProductCart from '../../Components/Products/Product.Cart'
+import ProductCart from '../../Components/Product/ProductCard';
 import CurrencyFormat from '../../Components/CurrencyFormat/CurrencyFormat';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import classes from './Cart.module.css'
-import { Type } from '../../Utility/action.type';
-import { IoIosArrowUp } from "react-icons/io";
-import { IoIosArrowDown } from "react-icons/io";
+import {Type} from '../../utility/action.type';
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+
 
 function Cart() {
     const [{basket, user }, dispatch] = useContext(DataContext);
